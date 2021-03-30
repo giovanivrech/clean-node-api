@@ -8,6 +8,7 @@ import {
   surveyAnswerSchema,
   surveysSchema,
   surveySchema,
+  addSurveyParamsSchema,
   apiKeyAuthSchema
 } from './schemas'
 
@@ -43,6 +44,7 @@ export default {
     error: errorSchema,
     surveys: surveysSchema,
     survey: surveySchema,
+    addSurveyParams: addSurveyParamsSchema,
     surveyAnswer: surveyAnswerSchema
   },
   components: {
