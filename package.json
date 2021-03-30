@@ -2,6 +2,8 @@
   "name": "clean-node-api",
   "version": "2.2.0",
   "description": "NodeJS Rest API using TDD, Clean Architecture and Typescript",
+  "author": "Giovani Vrech",
+  "license": "GPL-3.0-or-later",
   "main": "index.js",
   "scripts": {
     "start": "node dist/main/server.js",
@@ -19,8 +21,6 @@
     "test:coveralls": "npm run test:ci && coveralls < coverage/lcov.info"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
     "@types/bcrypt": "^3.0.0",
