@@ -1,19 +1,19 @@
-# Responder enquete
+# Answer Survey
 
-> ## Caso de sucesso:
-1. ✅ Recebe uma requisição do tipo **PUT** na rota **/api/surveys/{survey_id}/results**
-2. ✅ Valida se a requisição foi feita por um **usuário**
-3. ✅ Valida o parâmetro **survey_id**
-4. ✅ Valida se o campo  **answer** é uma resposta válida
-5. ✅ **Cria** um resultado de enquete com os dados fornecidos caso não tenha um registro
-6. ✅ **Atualiza** um resultado de enquete com os dados fornecidos caso já tenha um registro
-7. ✅ Retorna **200** com os dados do resultado da enquete
+> ## Success case:
+1. ✅ Receives a request of type **PUT** on route **/api/surveys/{survey_id}/results**
+2. ✅ Validates if the request was made by a **user**.
+3. ✅ Validates the **survey_id** parameter
+4. ✅ Validates if the **answer** field is a valid response
+5. ✅ **Create** a survey result with the data provided if you don't have a record
+6. ✅ **Updates** a survey result with the data provided if you already have a record
+7. ✅ Returns **200** with the survey result data
 
-> ## Exceções:
-1. ✅ Retorna erro **404** se a API não existir
-2. ✅ Retorna erro **403** se não for um usuário
-3. ✅ Retorna erro **403** se o survey_id passado na URL for inválido
-4. ✅ Retorna erro **403** se a resposta enviada pelo client for uma resposta inválida
-5. ✅ Retorna erro **500** se der erro ao tentar criar o resultado da enquete
-6. ✅ Retorna erro **500** se der erro ao tentar atualizar o resultado da enquete
-7. ✅ Retorna erro **500** se der erro ao tentar carregar a enquete
+> ## Exceptions:
+1. ✅ Returns error **404** if the API does not exist
+2. ✅ Returns error **403** if not a user
+3. ✅ Returns error **403** if the survey_id passed in the URL is invalid
+4. ✅ Returns error **403** if the response sent by the client is an invalid response
+5. ✅ Returns error **500** if an error occurs when trying to create the survey result
+6. ✅ Returns error **500** if an error occurs when trying to update the survey result
+7. ✅ Returns error **500** if an error occurs when trying to load the survey
