@@ -1,5 +1,5 @@
 export const badRequest = {
-  description: 'Requisição inválida',
+  description: 'Bad Request',
   content: {
     'application/json': {
       schema: {

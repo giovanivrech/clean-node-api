@@ -3,8 +3,8 @@ export const surveyResultPath = {
     security: [{
       apiKeyAuth: []
     }],
-    tags: ['Enquete'],
-    summary: 'API para criar a resposta de uma enquete',
+    tags: ['Survey'],
+    summary: 'Route to save a answer of the survey',
     requestBody: {
       content: {
         'application/json': {
@@ -24,7 +24,7 @@ export const surveyResultPath = {
     }],
     responses: {
       200: {
-        description: 'Sucesso',
+        description: 'Success',
         content: {
           'application/json': {
             schema: {

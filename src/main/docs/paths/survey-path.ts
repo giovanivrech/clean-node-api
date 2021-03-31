@@ -3,11 +3,11 @@ export const surveyPath = {
     security: [{
       apiKeyAuth: []
     }],
-    tags: ['Enquete'],
-    summary: 'API para listar todas as enquetes',
+    tags: ['Survey'],
+    summary: 'Route to list all surveys',
     responses: {
       200: {
-        description: 'Sucesso',
+        description: 'Success',
         content: {
           'application/json': {
             schema: {
@@ -31,8 +31,8 @@ export const surveyPath = {
     security: [{
       apiKeyAuth: []
     }],
-    tags: ['Enquete'],
-    summary: 'API criar uma enquete',
+    tags: ['Survey'],
+    summary: 'Route to create a survey',
     requestBody: {
       content: {
         'application/json': {
@@ -44,7 +44,7 @@ export const surveyPath = {
     },
     responses: {
       204: {
-        description: 'Sucesso'
+        description: 'Success'
       },
       403: {
         $ref: '#/components/forbidden'
