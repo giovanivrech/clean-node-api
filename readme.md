@@ -6,24 +6,24 @@
 
 ---
 
-## [**Link para o curso completo**](https://www.udemy.com/course/tdd-com-mango/?referralCode=B53CE5CA2B9AFA5A6FA1)
+## [**Link to the course**](https://www.udemy.com/course/tdd-com-mango/?referralCode=B53CE5CA2B9AFA5A6FA1)
 
-Essa API faz parte do treinamento do professor Rodrigo Manguinho (Mango) na Udemy.
+This API is part of professor Rodrigo Manguinho's (Mango) training at Udemy.
 
-O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem definida e desacoplada, utilizando TDD (programação orientada a testes) como metodologia de trabalho, Clean Architecture para fazer a distribuição de responsabilidades em camadas, sempre seguindo os princípios do SOLID e, sempre que possível, aplicando Design Patterns para resolver alguns problemas comuns.
+The objective of the training is to show how to create an API with a well-defined and decoupled architecture, using TDD (test-driven programming) as a working methodology, Clean Architecture to distribute responsibilities in layers, always following the SOLID principles and, whenever possible, applying Design Patterns to solve some common problems.
 
-## [**Link para a documentação da API**](https://clean-node-api-giovanivrech.herokuapp.com/api-docs/)
+## [**Link to API documentation*](https://clean-node-api-giovanivrech.herokuapp.com/api-docs/)
 
-> ## APIs construídas no treinamento
+> ## APIs built in training
 
-1. [Cadastro](./requirements/signup.md)
+1. [Signup](./requirements/signup.md)
 2. [Login](./requirements/login.md)
-3. [Criar enquete](./requirements/add-survey.md)
-4. [Listar enquetes](./requirements/surveys.md)
-5. [Responder enquete](./requirements/answer-survey.md)
-6. [Resultado da enquete](./requirements/survey-result.md)
+3. [Create survey](./requirements/add-survey.md)
+4. [List all surveys](./requirements/surveys.md)
+5. [Answer survey](./requirements/answer-survey.md)
+6. [Survey results](./requirements/survey-result.md)
 
-> ## Princípios
+> ## Principles
 
 * Single Responsibility Principle (SRP)
 * Open Closed Principle (OCP)
@@ -50,7 +50,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Builder
 * Singleton
 
-> ## Metodologias e Designs
+> ## Methodologies and Designs
 
 * TDD
 * Clean Architecture
@@ -64,7 +64,7 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Continuous Delivery
 * Continuous Deployment
 
-> ## Bibliotecas e Ferramentas
+> ## Libs and Tools
 
 * NPM
 * Typescript
@@ -99,20 +99,20 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Bson ObjectId
 * Apollo Server Integration Testing
 
-> ## Features do Node
+> ## Node Features
 
-* Documentação de API com Swagger
-* API Rest com Express
-* GraphQL com Apollo Server
-* Log de Erro
-* Segurança (Hashing, Encryption e Encoding)
+* API documentation with Swagger
+* API Rest with Express
+* GraphQL with Apollo Server
+* Error Log
+* Security (Hashing, Encryption e Encoding)
 * CORS
 * Middlewares
-* Nível de Acesso nas Rotas (Admin, User e Anônimo)
-* Deploy no Heroku
-* Servir Arquivos Estáticos
+* Routes with permissions (Admin, User e Anonymous)
+* Deploy in Heroku
+* Serve statics files
 
-> ## Features do GraphQL
+> ## GraphQL Features
 
 * Types
 * Queries
@@ -122,10 +122,9 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Scalars
 * Plugins
 
-> ## Features do Git
+> ## Git Features
 
 * Alias
-* Log Personalizado
 * Branch
 * Reset
 * Amend
@@ -134,40 +133,40 @@ O objetivo do treinamento é mostrar como criar uma API com uma arquitetura bem 
 * Rebase
 * Merge
 
-> ## Features do Typescript
+> ## Typescript Features
 
-* POO Avançado
+* OOP advanced
 * Interface
 * TypeAlias
 * Namespace
 * Utility Types
-* Modularização de Paths
-* Configurações
+* Paths Modularization
+* Configurations
 * Build
 * Deploy
-* Uso de Breakpoints
+* Breakpoints use
 
-> ## Features de Testes
+> ## Tests Features
 
-* Testes Unitários
-* Testes de Integração (API Rest & GraphQL)
-* Cobertura de Testes
+* Unit tests
+* Integration tests (API Rest & GraphQL)
+* Coverage tests
 * Test Doubles
 * Mocks
 * Stubs
 * Spies
 * Fakes
 
-> ## Features do MongoDb
+> ## MongoDb Features
 
-* Connect e Reconnect
+* Connect and Reconnect
 * Collections
-* InsertOne e InserMany
-* Find, FindOne e FindOneAndUpdate
+* InsertOne and InserMany
+* Find, FindOne and FindOneAndUpdate
 * DeleteMany
 * UpdateOne
 * Aggregation (Match, Group, Unwind, Lookup, AddFields, Project, Sort)
 * ObjectId
-* Upsert e ReturnOriginal
+* Upsert and ReturnOriginal
 * Push, Divide, Multiply, ArrayElemAt, Cond, Sum
 * Filter, Map, Reduce, MergeObjects, ConcatArrays
