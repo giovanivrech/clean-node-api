@@ -165,7 +165,7 @@ The objective of the training is to show how to create an API with a well-define
 * Find, FindOne and FindOneAndUpdate
 * DeleteMany
 * UpdateOne
-* Aggregation (Match, Group, Unwind, Lookup, AddFields, Project, Sort)
+* Aggregation (Match, Group, Unwind, Lookup, Project, Sort)
 * ObjectId
 * Upsert and ReturnOriginal
 * Push, Divide, Multiply, ArrayElemAt, Cond, Sum
