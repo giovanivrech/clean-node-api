@@ -1,7 +1,7 @@
 # Signup
 
 > ## Success cases:
-1. ✅ Receive a requisition of the **POST** type in route **/api/signup**
+1. ✅ Receive a requisition of the **POST** type on route **/api/signup**
 2. ✅ Validates required **name**, **email**, **password** and **passwordConfirmation** data
 3. ✅ Validates that **password** and **passwordConfirmation** are equal
 4. ✅ Validates that the **email** field is a valid email
