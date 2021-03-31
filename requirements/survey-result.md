@@ -8,4 +8,4 @@
 > ## Exceptions:
 1. ⛔️ Returns error **404** if the API does not exist
 2. ⛔️ Returns error **403** if not a user
-3. ⛔️ Returns error **500** if an error occurs when trying to list the survey results
+3. ✅ Returns error **500** if an error occurs when trying to list the survey results
