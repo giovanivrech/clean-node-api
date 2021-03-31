@@ -3,6 +3,7 @@ export const surveyPath = {
     security: [{
       apiKeyAuth: []
     }],
+    description: 'This route can only be executed by **authenticated users**',
     tags: ['Survey'],
     summary: 'Route to list all surveys',
     responses: {
@@ -31,6 +32,7 @@ export const surveyPath = {
     security: [{
       apiKeyAuth: []
     }],
+    description: 'This route can only be executed by **authenticated users**',
     tags: ['Survey'],
     summary: 'Route to create a survey',
     requestBody: {
