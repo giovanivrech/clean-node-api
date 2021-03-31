@@ -7,7 +7,7 @@
 4. ✅ Create a survey with the data provided
 
 > ## Exceptions:
-1. ✅ Returns error 404 if the API does not exist
-2. ✅ Returns error 403 if user is not admin
-3. ✅ Returns error 400 if **question** or **answers** are not supplied by the client
-4. ✅ Returns error 500 if an error occurs when trying to create the survey
+1. ✅ Returns error **404** if the API does not exist
+2. ✅ Returns error **403** if user is not admin
+3. ✅ Returns error **400** if **question** or **answers** are not supplied by the client
+4. ✅ Returns error **500** if an error occurs when trying to create the survey
