@@ -3,7 +3,7 @@
 > ## Success case:
 1. ✅ Receives a request of type **GET** on route **/api/surveys/{survey_id}/results**
 2. ✅ Validates if the request was made by a user
-3. ⛔️ Returns **200** with the survey result data
+3. ✅ Returns **200** with the survey result data
 
 > ## Exceptions:
 1. ✅ Returns error **404** if the API does not exist
