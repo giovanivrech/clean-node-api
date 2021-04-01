@@ -19,7 +19,7 @@ export class LoadAccountByEmailRepositorySpy implements LoadAccountByEmailReposi
   accountModel = mockAccountModel()
   email: string
 
-  async loadByEmail (email: string): Promise<AccountModel> {
+  async loadByEmail (email: string): Promise<LoadAccountByTokenRepository.Result> {
     this.email = email
     return Promise.resolve(this.accountModel)
   }
