@@ -1,12 +1,11 @@
 import { LoadSurveysController } from './load-surveys-controller'
-import { HttpRequest } from './load-surveys-controller-protocols'
 import { noContent, ok, serverError } from '@/presentation/helpers/http/http-helper'
 import { LoadSurveysSpy } from '@/presentation/test'
 import { throwError } from '@/domain/test'
 import MockDate from 'mockdate'
 import faker from 'faker'
 
-const mockRequest = (): HttpRequest => ({ accountId: faker.datatype.uuid() })
+const mockRequest = (): LoadSurveysController.Request => ({ accountId: faker.datatype.uuid() })
 
 type SutTypes = {
   sut: LoadSurveysController
