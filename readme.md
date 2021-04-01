@@ -1,5 +1,6 @@
 [![Build Status](https://www.travis-ci.com/giovanivrech/clean-node-api.svg?branch=master)](https://www.travis-ci.com/giovanivrech/clean-node-api)
 [![Coverage Status](https://coveralls.io/repos/github/giovanivrech/clean-node-api/badge.svg)](https://coveralls.io/github/giovanivrech/clean-node-api)
+[![Known Vulnerabilities](https://snyk.io/test/github/giovanivrech/clean-node-api/badge.svg)](https://snyk.io/test/github/giovanivrech/clean-node-api)
 [![Generic badge](https://img.shields.io/badge/status-development-yellow.svg)](https://shields.io/)
 
 # **Clean Node API**
