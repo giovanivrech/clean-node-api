@@ -10,7 +10,7 @@
 7. ✅ **Creates** an account for the user with the data entered, **replacing** the password with the encrypted password
 8. ✅ Generates an access **token** from the user ID
 9. ✅ **Updates** the user data with the generated access token
-10. ✅ Returns **200** with the access token
+10. ✅ Returns **200** with the access token and user name
 
 > ## Exceptions:
 1. ✅ Returns error **404** if the API does not exist

@@ -7,7 +7,7 @@
 4. ✅ Searches the user with the email and password provided
 5. ✅ Generates an access token from the user ID
 6. ✅ Updates user data with the generated access token
-7. ✅ Returns **200** with the access token
+7. ✅ Returns **200** with the access token and user name
 
 > ## Exceptions:
 1. ✅ Returns error **404** if the API does not exist
