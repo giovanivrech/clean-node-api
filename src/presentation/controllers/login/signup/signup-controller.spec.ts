@@ -56,7 +56,7 @@ describe('SignUp Controller', () => {
 
   test('Should return 413 if AddAccount returns null', async () => {
     const { sut, addAccountSpy } = makeSut()
-    addAccountSpy.accountModel = null
+    addAccountSpy.isValid = false
     const httpResponse = await sut.handle(mockRequest())
     expect(httpResponse).toEqual(forbidden(new EmailInUseError()))
   })
