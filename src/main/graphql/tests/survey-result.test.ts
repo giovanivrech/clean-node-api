@@ -136,10 +136,10 @@ describe('SurveyResult GraphQL', () => {
     })
   })
 
-  describe('SurveyResult Query', () => {
-    const surveyResultQuery = gql`
-        query surveyResult ($surveyId: String!) {
-          surveyResult (surveyId: $surveyId) {
+  describe('SaveSurveyResult Mutation', () => {
+    const saveSurveyResultMutation = gql`
+        mutation saveSurveyResult ($surveyId: String!, $answer: String!) {
+          saveSurveyResult (surveyId: $surveyId, answer: $answer) {
               question
               answers {
                 image
@@ -152,7 +152,7 @@ describe('SurveyResult GraphQL', () => {
             }
         }
     `
-    test('Should return surveyResult', async () => {
+    test('Should return SurveyResult', async () => {
       const accessToken = await makeAccessToken()
       const now = new Date()
       const surveyRes = await surveyCollection.insertOne({
@@ -167,7 +167,7 @@ describe('SurveyResult GraphQL', () => {
         date: now
       })
 
-      const { query } = createTestClient({
+      const { mutate } = createTestClient({
         apolloServer,
         extendMockRequest: {
           headers: {
@@ -175,18 +175,19 @@ describe('SurveyResult GraphQL', () => {
           }
         }
       })
-      const res: any = await query(surveyResultQuery, {
+      const res: any = await mutate(saveSurveyResultMutation, {
         variables: {
-          surveyId: surveyRes.ops[0]._id.toString()
+          surveyId: surveyRes.ops[0]._id.toString(),
+          answer: 'Answer 1'
         }
       })
-      expect(res.data.surveyResult.question).toBe('Question')
-      expect(res.data.surveyResult.date).toBe(now.toISOString())
-      expect(res.data.surveyResult.answers).toEqual([{
+      expect(res.data.saveSurveyResult.question).toBe('Question')
+      expect(res.data.saveSurveyResult.date).toBe(now.toISOString())
+      expect(res.data.saveSurveyResult.answers).toEqual([{
         answer: 'Answer 1',
-        count: 0,
-        percent: 0,
-        isCurrentAccountAnswer: false,
+        count: 1,
+        percent: 100,
+        isCurrentAccountAnswer: true,
         image: 'http://image-name.com'
       },
       {
@@ -197,4 +198,5 @@ describe('SurveyResult GraphQL', () => {
         image: null
       }])
     })
+  })
 })
