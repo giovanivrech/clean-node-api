@@ -1,6 +1,5 @@
 [![Build Status](https://www.travis-ci.com/giovanivrech/clean-node-api.svg?branch=master)](https://www.travis-ci.com/giovanivrech/clean-node-api)
 [![Coverage Status](https://coveralls.io/repos/github/giovanivrech/clean-node-api/badge.svg)](https://coveralls.io/github/giovanivrech/clean-node-api)
-[![Known Vulnerabilities](https://snyk.io/test/github/giovanivrech/clean-node-api/badge.svg)](https://snyk.io/test/github/giovanivrech/clean-node-api)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![Generic badge](https://img.shields.io/badge/status-development-yellow.svg)](https://shields.io/)
