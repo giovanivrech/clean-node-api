@@ -5,15 +5,17 @@ import { CheckAccountByEmailRepository } from '@/data/protocols/db/account/check
 import { UpdateAccessTokenRepository } from '@/data/usescases/account/authentication/db-authentication-protocols'
 import { LoadAccountByTokenRepository } from '@/data/protocols/db/account/load-account-by-token-repository'
 
+import { ObjectId } from 'mongodb'
+
 export class AccountMongoRepository implements AddAccountRepository, LoadAccountByEmailRepository, UpdateAccessTokenRepository, LoadAccountByTokenRepository, CheckAccountByEmailRepository {
   async add (data: AddAccountRepository.Params): Promise<AddAccountRepository.Result> {
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     const result = await accountCollection.insertOne(data)
-    return result.ops[0] !== null
+    return result.insertedId !== null
   }
 
   async loadByEmail (email: string): Promise<LoadAccountByEmailRepository.Result> {
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     const account = await accountCollection.findOne({
       email
     }, {
@@ -27,7 +29,7 @@ export class AccountMongoRepository implements AddAccountRepository, LoadAccount
   }
 
   async checkByEmail (email: string): Promise<CheckAccountByEmailRepository.Result> {
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     const account = await accountCollection.findOne({
       email
     }, {
@@ -39,9 +41,9 @@ export class AccountMongoRepository implements AddAccountRepository, LoadAccount
   }
 
   async updateAccessToken (id: string, token: string): Promise<void> {
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     await accountCollection.updateOne({
-      _id: id
+      _id: new ObjectId(id)
     }, {
       $set: {
         accessToken: token
@@ -50,7 +52,7 @@ export class AccountMongoRepository implements AddAccountRepository, LoadAccount
   }
 
   async loadByToken (token: string, role?: string): Promise<LoadAccountByTokenRepository.Result> {
-    const accountCollection = await MongoHelper.getCollection('accounts')
+    const accountCollection = MongoHelper.getCollection('accounts')
     const account = await accountCollection.findOne({
       accessToken: token,
       $or: [{
